@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4"><%= @employee.first_name %> <%= @employee.last_name %></h1>
+    <p class="lead">Email: <%= @employee.email %>, Phone: <%= @employee.phone %></p>
+    <body class="text-center">
+    <%= link_to 'Edit', edit_employee_path(@employee), class:"btn btn-secondary" %>
+	<%= link_to 'Back', employees_path,class:"btn btn-secondary" %>
+	</body>
+  </div>
+</div>
